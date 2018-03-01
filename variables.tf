@@ -17,3 +17,9 @@ variable "name" {
   description = "name to pass to Name tag"
   default = "Provisioned by Terraform"
 }
+
+variable "avail_zone" {
+  default = {
+      "0" = "us-west-1a"
+      "1" = "us-west-1c"
+  }
