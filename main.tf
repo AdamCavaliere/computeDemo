@@ -19,5 +19,5 @@ resource "aws_instance" "foo" {
     owner = "Adam"
     TTL = 1
   }
-  subnet_id = "${lookup(data.terraform_remote_state.vpc.app_subnet, count.index)}"
+  subnet_id = "${element(data.terraform_remote_state.vpc.app_subnet, count.index)}"
 }
