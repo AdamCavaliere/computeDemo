@@ -23,3 +23,4 @@ variable "avail_zone" {
       "0" = "us-west-1a"
       "1" = "us-west-1c"
   }
+}
